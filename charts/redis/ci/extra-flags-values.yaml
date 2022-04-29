@@ -3,10 +3,9 @@ master:
     - --maxmemory-policy allkeys-lru
   persistence:
     enabled: false
-replica:
+slave:
   extraFlags:
     - --maxmemory-policy allkeys-lru
   persistence:
     enabled: false
-auth:
-  enabled: false
+usePassword: false
