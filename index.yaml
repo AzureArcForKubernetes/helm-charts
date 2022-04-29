@@ -6,7 +6,8 @@ entries:
     apiVersion: v2
     appVersion: 1.13.1
     created: "2022-04-29T20:46:44.124486165Z"
-    description: A Library Helm Chart for grouping common logic between bitnami charts. This chart is not deployable by itself.
+    description: A Library Helm Chart for grouping common logic between bitnami charts.
+      This chart is not deployable by itself.
     digest: 2f6daef341faeff96083938be01908ecd84c439b374e451eed448f9d73ac3398
     home: https://github.com/bitnami/charts/tree/master/bitnami/common
     icon: https://bitnami.com/downloads/logos/bitnami-mark.png
@@ -27,4 +28,72 @@ entries:
     urls:
     - https://github.com/AzureArcForKubernetes/helm-charts/releases/download/common-1.13.1/common-1.13.1.tgz
     version: 1.13.1
-generated: "2022-04-29T20:46:43.867731075Z"
+  nginx-ingress-controller:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 1.1.3
+    created: "2022-04-29T20:54:25.465611114Z"
+    dependencies:
+    - name: common
+      repository: https://azurearcforkubernetes.github.io/helm-charts
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: NGINX Ingress Controller is an Ingress controller that manages external
+      access to HTTP services in a Kubernetes cluster using NGINX.
+    digest: c10f4bf2b004b869a30a82ac6218eed7748643f761ad975aa65eace8a8aa2d2f
+    home: https://github.com/bitnami/charts/tree/master/bitnami/nginx-ingress-controller
+    icon: https://bitnami.com/assets/stacks/nginx-ingress-controller/img/nginx-ingress-controller-stack-220x234.png
+    keywords:
+    - ingress
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: nginx-ingress-controller
+    sources:
+    - https://github.com/bitnami/bitnami-docker-nginx-ingress-controller
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://github.com/AzureArcForKubernetes/helm-charts/releases/download/nginx-ingress-controller-9.1.26/nginx-ingress-controller-9.1.26.tgz
+    version: 9.1.26
+  redis:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 6.2.7
+    created: "2022-04-29T20:54:25.630648689Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Redis(TM) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 179985d6c3150aece807a039b1c3d6803d68ecf118813514e8292ee51aca3a3a
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - https://github.com/AzureArcForKubernetes/helm-charts/releases/download/redis-16.8.9/redis-16.8.9.tgz
+    version: 16.8.9
+generated: "2022-04-29T20:54:25.630658587Z"
