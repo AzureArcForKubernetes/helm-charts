@@ -96,4 +96,31 @@ entries:
     urls:
     - https://github.com/AzureArcForKubernetes/helm-charts/releases/download/redis-16.8.9/redis-16.8.9.tgz
     version: 16.8.9
-generated: "2022-04-29T20:54:25.630658587Z"
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 6.0.9
+    created: "2022-04-29T21:16:07.660208595Z"
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: edb450fe1cdb8d22a50ee09acf2e700eaebff6d5331d221f4aa96cf36e775fcc
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - https://github.com/AzureArcForKubernetes/helm-charts/releases/download/redis-11.3.4/redis-11.3.4.tgz
+    version: 11.3.4
+generated: "2022-04-29T21:16:07.660234395Z"
