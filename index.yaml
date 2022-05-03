@@ -123,4 +123,37 @@ entries:
     urls:
     - https://github.com/AzureArcForKubernetes/helm-charts/releases/download/redis-11.3.4/redis-11.3.4.tgz
     version: 11.3.4
+  mongodb:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 5.0.8
+    created: "2022-05-03T11:49:50.4630035-07:00"
+    dependencies:
+    - name: common
+      repository: https://azurearcforkubernetes.github.io/helm-charts
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use, it stores data in JSON-like documents. Automated scalability and high-performance. Ideal for developing cloud native applications.
+    digest: 2c38f8b2af5ba462974589ae543f8079efb93d0a8554573d94de4677c6200e1f
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    - https://mongodb.org
+    urls:
+    - https://github.com/AzureArcForKubernetes/helm-charts/releases/download/mongodb-12.0.0/mongodb-12.0.0.tgz
+    version: 12.0.0
 generated: "2022-04-29T21:16:07.660234395Z"
